@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+        <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+		<!-- Code for displaying favicon on all devices-->
+		<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../images/favicons/android-icon-192x192.png">
+		<!--<link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">-->
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/HourGlass_transp.ico">
+		
+		<link rel="manifest" href="../images/favicons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+
+        <title>Heure Health</title>
+        
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!--external css-->
+        <link href="../font-awesome/css/font-awesome.css" rel="stylesheet">
+        
+        
+        <link rel="stylesheet" type="text/css" href="../lineicons/style.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/style-responsive.css" rel="stylesheet">
+		<script src="../js/userinfo.js"></script>
+        <link href="../js/jquery-fullscreen-plugin-master/demo/fullscreen.css" rel="stylesheet">
+        <script src="../js/Chart.js-master/Chart.js"></script>
+		
+        <script src="../js/RaghuSantanam.js"></script>
+		
+		
+		
+		
+		<!-- For RGraph Meter Gauge -->
+		<script src="../js/RGraph/libraries/RGraph.common.core.js"></script>
+		<script src="../js/RGraph/libraries/RGraph.common.dynamic.js"></script>
+		
+		<script src="../js/RGraph/libraries/RGraph.pie.js"></script>
+		<script src="../js/RGraph/libraries/RGraph.meter.js"></script>
+		<script src="../js/RGraph/libraries/RGraph.common.tooltips.js"></script>
+		<script src="../js/RGraph/libraries/RGraph.common.key.js"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>		
+
+		<!--<link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css" />-->
+		<link href="../css/firechat.css" rel="stylesheet">
+		
+		<!--<script src="..\js\firechatusers.js"></script> -- >
+		
+
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements
+        and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/cookie:n4:default;crushed:n4:default;dhyana:n4:default;federo:n4:default;neuton:n4:default;actor:n4:default;imprima:n4:default;irish-grover:n4:default;lobster:n4:default;lobster-two:n4:default;alegreya-sc:n4:default.js" type="text/javascript"></script>
+</head>
+    
+    <body>
+        <section id="container">
+		
+            <!-- **********************************************************************************************************************************************************
+            TOP BAR CONTENT & NOTIFICATIONS ***********************************************************************************************************************************************************
+            -->
+			
+            <!--header start-->
+            <!--#include virtual="../includes/header.html" -->
+            <!--header end-->
+            <!-- **********************************************************************************************************************************************************
+            MAIN SIDEBAR MENU ***********************************************************************************************************************************************************
+            -->
+			
+            <!--sidebar start-->
+            <!--#include virtual="../includes/sidebar.html" -->
+		  
+            <!--sidebar end-->
+            <!-- **********************************************************************************************************************************************************
+            MAIN CONTENT ***********************************************************************************************************************************************************
+            -->
+            <!--main content start-->
+            <section id="main-content">
+                <section class="wrapper">
+				
+
+					<div class="row marginbottom paddingleft">
+					<!--#include virtual="../includes/navigationtabs.html" -->
+						
+						<!--<div class="col-lg-9 col-md-11 col-sm-10 no-padding marginbottom">-->
+						<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 no-padding marginbottom">
+							<div class = "white-panel mainchart marginright">
+								<div class="white-header">
+									<h5><img src = "" id = "mainchartheaderlogo"> <span id = "mainchart_header_hrr"></span> 
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div>
+							
+								<!--#include virtual="../includes/informationicon.html" -->  
+							
+								<div class = "canvassize">
+									<canvas id="bar" class = "bar"></canvas> <!--canvas width and height in CSS file -->
+									
+									<div id="legend" class = "legend"></div>
+									
+								</div>
+							
+							 <script>
+								var myBarChart = new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData_cost_local,
+								{
+								barValueSpacing : 25,
+								tooltipTemplate: "<%= parseFloat(value).toFixed(2) %>",
+								showTooltips: true,
+								scaleOverride: true,
+								scaleSteps: 7,
+								scaleStepWidth: 1,			
+								scaleStartValue: 0,
+								tooltipFillColor: "rgba(250, 255, 119, 0.5)",
+								tooltipFontColor: "#606060",
+								tooltipFontFamily: "'alegreya-sc','Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+								tooltipFontSize: 14,
+								scaleFontSize: 10,
+								scaleShowGridLines: false,
+								responsive: true,
+								maintainAspectRatio: false,
+								legendTemplate : '<ul class=\"<%=name.toLowerCase()%>-legend\">'
+									  +'<% for (var i=0; i<datasets.length; i++) { %>'
+										+'<li>'
+										+'<span style=\"background-color:<%=datasets[i].fillColor%>\"></span>'
+										+'<% if (datasets[i].label) { %><%= datasets[i].label %><% } %>'
+									  +'</li>'
+									+'<% } %>'
+								  +'</ul>',
+								 onAnimationComplete: function() {
+                                var ctx = this.chart.ctx;
+                                ctx.font = this.scale.font;
+                                ctx.fillStyle = this.scale.textColor
+                                ctx.textAlign = "right";
+                                ctx.textBaseline = "right";
+                                this.datasets.forEach(function(dataset) {
+                                    dataset.bars.forEach(function(bar) {
+                                        ctx.fillText(bar.value, bar.x + 10, bar.y - 5);
+                                    });
+									//alert(dataset.bars[0].label);
+                                });
+                            }						
+								});	
+								
+								var legendHolder = document.createElement('div');
+								legendHolder.innerHTML = myBarChart.generateLegend();								
+								document.getElementById('legend').appendChild(legendHolder.firstChild);
+							 </script>
+							 
+						  </div>
+						</div>
+					  
+						<div class="col-lg-3">
+							<div class = "row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding paddingleft">
+                                    <div class="white-panel pnmain">
+                                        <div class="white-header">
+                                            <h5><img src = "" id = "pnmainchartheaderlogo"> <span id = "pnmainchart_header" ></span>
+											<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+                                        </div>
+											<div class = "canvassizepie">
+												<canvas id="piechart" width = "210px" height = "275px" ></canvas> <!--canvas width and height in CSS file -->
+											</div>													
+												<script>
+													// Calculation of variable tooltips	
+													var tooltipvar = [];
+													for(i=0;i  <pieChartData_cost_local_labels.length;i++){
+														
+														tooltipvar[i] = pieChartData_cost_local_labels[i] + ' '+pieChartData_cost_local_data[i] + "%";
+
+													}
+													
+																				
+													function myCallback (obj)
+													{
+														// ...
+													}
+
+
+													var pie = new RGraph.Pie({
+														id: 'piechart',
+														data: pieChartData_cost_local_data,
+														//data: pieChartData,
+														options: {
+															//labels: tooltipvar,
+															linewidth: 1,
+															strokestyle: 'white',
+															colors: ['#A7F1A7','#FAFF77','#CC5959'],
+															//colors: [leader-green,challenger-yellow,aspirant-red],
+															textSize : 9,															
+															textFont: 'Arial',
+															labelsColors : ['#CC5959','#578C56','#D3D300'],
+															//labelsIngraph: false,
+															//labelsIngraphBounding: false,
+															//labelsIngraphUnitsPost : '%',												
+															//labelsIngraphColor: '#606060',
+															//tooltipsEvent: 'onmousemove',
+															//tooltips: pieChartData_quality_nation_labels,
+															tooltips: tooltipvar,
+															//labelsIngraphSpecific: tooltipvar,
+															shadowBlur : 0,
+															//key: pieChartData_quality_nation_labels
+															key: tooltipvar,
+															keyTextColor: '#666666',
+															keyTextSize: 8,
+															keyColorShape: 'circle'
+															//labelsIngraphSpecific : ['%','%','%']															
+														}
+													}).on('beforedraw', function (obj)
+														{
+															RGraph.clear(obj.canvas, 'white');
+														}).roundRobin({frames: 100})
+														  .grow({frames: 60});
+
+
+												</script>
+                                        
+                                    </div>
+								</div>
+							</div>
+									
+								
+                        </div>
+					  
+					</div>
+                    <!-- --/row ---->
+					<!--<br/>-->
+					<div class = "row">
+						<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 marginbottom no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5><img src = "" id = "hospscoreheaderlogo"> <span id = "hospscore_header"></span>
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div> 
+								
+								<canvas	id = "meter1" width = "240px" height = "125px"></canvas>
+								<script>
+									function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter1',
+									min: 0,
+									max: 7,
+									value: meterChartData_cost_local_Hosp_Score,
+									options: {										
+										colorsRanges: [
+											[0,2.33, '#CC5959'],
+											[2.33,4.66, '#FAFF77'],
+											[4.66,7, '#A7F1A7']
+										],										
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										needleLinewidth: 2,
+										centerpinFill: 'white',
+										tickmarksSmallNum: 0,
+										tickmarksBigNum: 0,
+										textSize: 10,
+										anglesStart: RGraph.PI + 0.5,
+										anglesEnd: RGraph.TWOPI - 0.5,
+										linewidthSegments: 10,
+										strokestyle: 'white',
+										segmentRadiusStart: 65,
+										border: 0,
+										textValign: 'center',
+										needleRadius: 50,
+										//gutterTop: 50
+										//gutterBottom: 50
+										
+									}
+								}).grow({frames: 60}, myCallback);
+								
+								</script>
+								
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 marginbottom no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5><img src = "" id = "avgaspscoreheaderlogo"> <span id = "avgaspscore_header"></span>
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div> 
+								<canvas	id = "meter2" width = "240px" height = "125px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter2',
+									min: 0,
+									max: 7,
+									value: meterChartData_cost_local_Avg_Asp_Score,
+									options: {
+										/*colorsRanges: [
+											[0,2.33, 'Gradient(#F2F2F2:#CC5959)'],
+											[2.33,4.66, 'Gradient(#F2F2F2:#FAFF77)'],
+											[4.66,7, 'Gradient(#F2F2F2:#A7F1A7)']
+										],*/
+										colorsRanges: [
+											[0,2.33, '#CC5959'],
+											[2.33,4.66, '#FAFF77'],
+											[4.66,7, '#A7F1A7']
+										],										
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										needleLinewidth: 2,
+										centerpinFill: 'white',
+										tickmarksSmallNum: 0,
+										tickmarksBigNum: 0,
+										textSize: 10,
+										anglesStart: RGraph.PI + 0.5,
+										anglesEnd: RGraph.TWOPI - 0.5,
+										linewidthSegments: 10,
+										strokestyle: 'white',
+										segmentRadiusStart: 65,
+										border: 0,
+										textValign: 'center',
+										needleRadius: 50
+										
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 marginbottom no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5><img src = "" id = "avgchallscoreheaderlogo"> <span id = "avgchallscore_header"></span>
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div> 
+								<canvas	id = "meter3" width = "240px" height = "125px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter3',
+									min: 0,
+									max: 7,
+									value: meterChartData_cost_local_Avg_Chal_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, '#CC5959'],
+											[2.33,4.66, '#FAFF77'],
+											[4.66,7, '#A7F1A7']
+										],										
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										needleLinewidth: 2,
+										centerpinFill: 'white',
+										tickmarksSmallNum: 0,
+										tickmarksBigNum: 0,
+										textSize: 10,
+										anglesStart: RGraph.PI + 0.5,
+										anglesEnd: RGraph.TWOPI - 0.5,
+										linewidthSegments: 10,
+										strokestyle: 'white',
+										segmentRadiusStart: 65,
+										border: 0,
+										textValign: 'center',
+										needleRadius: 50
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 marginbottom no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5><img src = "" id = "avgleadscoreheaderlogo"> <span id = "avgleadscore_header"></span>
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div> 
+								<canvas	id = "meter4" width = "240px" height = "125px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter4',
+									min: 0,
+									max: 7,
+									value: meterChartData_cost_local_Avg_Lead_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, '#CC5959'],
+											[2.33,4.66, '#FAFF77'],
+											[4.66,7, '#A7F1A7']
+										],										
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										needleLinewidth: 2,
+										centerpinFill: 'white',
+										tickmarksSmallNum: 0,
+										tickmarksBigNum: 0,
+										textSize: 10,
+										anglesStart: RGraph.PI + 0.5,
+										anglesEnd: RGraph.TWOPI - 0.5,
+										linewidthSegments: 10,
+										strokestyle: 'white',
+										segmentRadiusStart: 65,
+										border: 0,
+										textValign: 'center',
+										needleRadius: 50
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>								
+							</div>
+                        </div>
+					</div>
+					<!-- Row -->
+					<div class="row marginbottom paddingleft">
+						<div class = "col-lg-6 marginbottom no-padding small-padding">
+							<div class="white-panel pn">
+								<div class="white-header smallcaps">
+									<h5>National Market Position
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div>
+								<!-- canvas -->
+							</div>
+						</div>
+						<div class = "col-lg-6 marginbottom no-padding small-padding">
+							<div class="white-panel pn">
+								<div class="white-header smallcaps">
+									<h5>National Market Position
+									<a href = "#" id = "infobutton" data-toggle="modal" data-target="#myModal"><span style="color:#B5B5B5" class="glyphicon glyphicon-info-sign" id = "i"></span></a></h5>	
+								</div>
+								<!-- canvas -->
+							</div>
+						</div>
+					</div>
+                 </section>
+            </section>
+            <!--main content end-->
+            <!-- **********************************************************************************************************************************************************
+            RIGHT SIDEBAR CONTENT ***********************************************************************************************************************************************************
+            -->
+            <!--#include virtual="../includes/rightsidebar.html" -->
+			<!--right sidebar end-->
+			
+            <!--footer start-->
+            <!--#include virtual="../includes/footer.html" -->
+            <!--footer end-->
+        </section>
+        <!-- js placed at the end of the document so the pages load faster -->
+        
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script class="include" type="text/javascript" src="../js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="../js/jquery.scrollTo.min.js"></script> 
+        <script src="../js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="../js/jquery.sparkline.js"></script> 
+        <!--common script for all pages-->
+        <script src="../js/common-scripts.js"></script>
+		<script src="../js/loading-scripts.js"></script>
+		
+		<!-- Firechat -->
+						<!-- jQuery -->
+						
+
+						<!-- Firebase -->
+						<script src="https://cdn.firebase.com/js/client/2.0.6/firebase.js"></script>
+						<script src="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js"></script>
+                    <script>
+						 
+						var chatRef = new Firebase('https://intense-fire-8127.firebaseio.com/');
+					    var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
+					    chatRef.onAuth(function(authData) {
+						if (authData) {
+						  chat.setUser(authData.uid, "Anonymous" + authData.uid.substr(10, 8));
+						} else {
+						  chatRef.authAnonymously(function(error, authData) {
+							if (error) {
+							  console.log(error);
+							}
+						  });
+						}
+					    });
+						  
+					</script>
+					<script> 
+								  $("span").css("font-variant", "small-caps");
+								  </script>
+        
+    </body>
+
+</html>

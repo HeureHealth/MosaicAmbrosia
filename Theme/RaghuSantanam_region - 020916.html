@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Dashboard">
+        <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+        <title>Mosaic Ambrosia - Solving fundamental Organizational Issues</title>
+        <!--
+        Bootstrap core CSS -->
+        <!--<link href="assets/css/bootstrap.css" rel="stylesheet">-->
+		<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <!--external css-->
+        <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/zabuto_calendar.css">
+        <link rel="stylesheet" type="text/css" href="assets/js/gritter/css/jquery.gritter.css">
+        <link rel="stylesheet" type="text/css" href="assets/lineicons/style.css">
+        <!-- Custom styles for this template -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style-responsive.css" rel="stylesheet">
+		<script src="assets/js/userinfo.js"></script>
+        <link href="assets/js/jquery-fullscreen-plugin-master/demo/fullscreen.css"
+        rel="stylesheet">
+        <script src="assets/js/Chart.js-master/Chart.js"></script>
+        <script src="assets/js/RaghuSantanam.js"></script>
+		<!-- For 3D Pie chart -->
+		
+
+		
+		<!-- For RGraph Meter Gauge -->
+		<script src="assets/js/RGraph/libraries/RGraph.common.core.js"></script>
+		<script src="assets/js/RGraph/libraries/RGraph.common.dynamic.js"></script>
+		<script src="assets/js/RGraph/libraries/RGraph.meter.js"></script>
+		
+		<!-- Firechat -->
+		<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+
+<!-- Firebase -->
+<script src='https://cdn.firebase.com/js/client/2.0.6/firebase.js'></script>
+
+<!-- Firechat -->
+<link rel='stylesheet' href='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css' />
+<script src='https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js'></script>
+<!--<script src="assets\js\firechatusers.js"></script> -- >
+
+<!-- Custom CSS for Firechat -->
+    <style>
+      #firechat-wrapper {
+        height: 210px;
+        max-width: 325px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        margin: 50px auto;
+        text-align: center;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 5px 25px #666;
+        -moz-box-shadow: 0 5px 25px #666;
+        box-shadow: 0 5px 25px #666;
+      }
+    </style>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements
+        and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/cookie:n4:default;crushed:n4:default;dhyana:n4:default;federo:n4:default;neuton:n4:default;actor:n4:default;imprima:n4:default;irish-grover:n4:default;lobster:n4:default;lobster-two:n4:default;alegreya-sc:n4:default.js" type="text/javascript"></script>
+</head>
+    
+    <body>
+        <section id="container">
+            <!-- **********************************************************************************************************************************************************
+            TOP BAR CONTENT & NOTIFICATIONS ***********************************************************************************************************************************************************
+            -->
+            <!--header start-->
+            <header class="header black-bg">
+                <div class="header-content">
+                    <div class="sidebar-toggle-box">
+                        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+                    </div>
+                    <!--logo of User start-->
+                    <div class="user_logo smallscreen">
+					<img src="assets/img/asu.png" id = "logo">
+                        <!--<img src="assets\img\logo1_mg.png" id = "logo"> -->
+                        <img src="assets/img/RaghuSantanam.png" class="img-circle" width="30" id="pic">
+                        <p class="centered" id = "uname">RAGHU T. SANTANAM</p>
+                    </div>
+                    <!-- Heure Module name -->
+                    <div class="module_name">
+                        
+                            <img src="assets/img/Heure.png">
+                        
+                    </div>
+                    
+
+                    <!--logo of MA start-->
+                    <div class="logo">
+                        <img src="assets/img/Logo.png">
+                     </div>
+                        <!--Enable Full screen -->
+                        <!--<div id="fullscreen">
+
+					 <div class="glyphicon glyphicon-fullscreen tooltips" data-placement="left" data-original-title="Full Screen"></div>
+
+				</div>-->
+                        <!-- For Notifications and Messages to toggle -->
+                        <div id="rightsidebar">
+                            <div class="glyphicon glyphicon-chevron-down tooltips" data-placement="left"
+                            data-original-title="Toggle Notifications"></div>
+                        </div>
+                                        <!--logo end-->
+                </div>
+            </header>
+            <!--header end-->
+            <!-- **********************************************************************************************************************************************************
+            MAIN SIDEBAR MENU ***********************************************************************************************************************************************************
+            -->
+            <!--sidebar start-->
+            <aside>
+                <div id="sidebar" class="nav-collapse">
+                    <!-- sidebar menu start-->
+                    <ul class="sidebar-menu" id="nav-accordion">
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem1">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Expansion Opportunities</span>
+							</a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="RaghuSantanam_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="RaghuSantanam_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="RaghuSantanam_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">	
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem2">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Performance Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">	
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem3">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Cost Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem4">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Innovation Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem5">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Partnership Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem6">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>New Entrant Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+						</li>
+						<li class="sub-menu">
+							<a href="javascript:;">
+							<img src="assets/img/BannerHealthLogo.png" id = "navlogoitem7">
+								  <!--<i class="fa fa-plus"></i>-->
+								  <span>Investor Opportunities</span>
+							</a>
+							<ul class="sub">
+                                <li>
+                                    <a href="index_state.html">By State</a>
+                                </li>
+                                <li>
+                                    <a href="index_division.html">By Division</a>
+                                </li>
+                                <li>
+                                    <a href="index_region.html">By Region</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 4</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 5</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 6</a>
+                                </li>
+                                <li>
+                                    <a href="panels.html">Sub-Item 7</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- sidebar menu end-->
+                </div>
+          </aside>
+            <!--sidebar end-->
+            <!-- **********************************************************************************************************************************************************
+            MAIN CONTENT ***********************************************************************************************************************************************************
+            -->
+            <!--main content start-->
+            <section id="main-content">
+                <section class="wrapper">
+					<div class="row mb">
+						
+						 <div class="col-lg-9 col-md-11 col-sm-10 mb">
+							<div class = "mainchart white-panel">
+							<div class="white-header">
+								<h5>MARKET EXPANSION - NATIONAL</h5>
+							</div>
+							
+							<canvas id="bar" class="bar"></canvas> <!--canvas width and height in CSS file -->
+							 <script>
+								
+								Chart.defaults.global.responsive = true; <!-- To make chart resize according to window width -->
+								var myBarChart = new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData_marketexpansion_region,{barValueSpacing : 50});
+								//fillColor : "rgba(73,188,170,0.4)";
+								//myBarChart.datasets[0].bars[1].fillColor = "rgba(73,188,170,0.4)";
+								myBarChart.datasets[0].bars[0].fillColor = "white";
+								myBarChart.update();
+									
+							 </script> 
+						  </div>
+						</div>
+					  
+						<div id = "subgraph1" class="col-lg-3">
+								<div class = "row">
+								<div class="col-lg-12 col-md-10 col-sm-8 col-xs-12">
+                                    <div class="white-panel pnmain">
+                                        <div class="white-header">
+                                            <h5>ABSOLUTE GROWTH OPPORTUNITY</h5>
+                                        </div>
+                                        <!--<div class="row">
+                                            <div class="col-sm-6 col-xs-6 goleft">-->
+											
+												<!--<div id="pieChart"></div>
+
+												<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+												<script src="assets/js/D3Pie/d3pie.min.js"></script>
+												<script>
+													//var pie = new d3pie("pieChart", {data: {content: data}});
+													var pie = new d3pie("pieChart", {
+													header: {
+														title: {
+															fontSize: 24,
+															font: "open sans"
+														},
+														subtitle: {
+															color: "#999999",
+															fontSize: 12,
+															font: "open sans"
+														},
+														titleSubtitlePadding: 6
+													},
+													footer: {
+														color: "#999999",
+														fontSize: 10,
+														font: "open sans",
+														location: "bottom-left"
+													},
+													size: {
+														canvasHeight: 200,
+														canvasWidth: 200,
+														pieOuterRadius: "90%"
+													},
+													data: {
+														content: pieChartData_marketexpansion_region
+													  },
+													labels: {
+														outer: {
+															format: "none",
+															pieDistance: 32
+														},
+														inner: {
+															format: "label-percentage2",
+															hideWhenLessThanPercentage: 3
+														},
+														mainLabel: {
+															color: "#837878",
+															font: "alegreya-sc",
+															fontSize: 12
+														},
+														percentage: {
+															color: "#666464",
+															decimalPlaces: 0
+														},
+														value: {
+															color: "#080808",
+															fontSize: 9
+														},
+														truncation: {
+															enabled: true
+														}
+													},
+													effects: {
+														load: {
+															speed: 1500
+														},
+														pullOutSegmentOnClick: {
+															effect: "back",
+															speed: 400,
+															size: 8
+														}
+													},
+													misc: {
+														gradient: {
+															enabled: true,
+															percentage: 45,
+															color: "white"
+														}
+													}
+												});
+												</script> -->
+												<canvas id="piechart"  ></canvas> <!--canvas width and height in CSS file -->
+												<script>
+												//var myBarChart = new Chart(document.getElementById("bar").getContext("2d")).Bar(barChartData_marketexpansion_region,{barValueSpacing : 50});
+												
+												var data = [
+														{
+															value: 300,
+															color:"#F7464A",
+															highlight: "#FF5A5E",
+															label: "Red"
+														},
+														{
+															value: 50,
+															color: "#46BFBD",
+															highlight: "#5AD3D1",
+															label: "Green"
+														},
+														{
+															value: 100,
+															color: "#FDB45C",
+															highlight: "#FFC870",
+															label: "Yellow"
+														}
+													]
+													// For a pie chart
+												
+													var myPieChart = new Chart(document.getElementById("piechart").getContext("2d")).Pie(data);
+												</script>
+                                           <!-- </div>
+                                        </div>-->
+                                        
+                                    </div>
+                                    <!-- --/grey-panel ---->
+									</div>
+								</div>
+									
+								
+                        </div>
+					  
+					</div>
+                    <!-- --/row ---->
+					<!--<br/>-->
+					<div class = "row">
+						<div class="col-lg-3 col-md-10 col-sm-8 mb no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5>HOSPITAL SCORE</h5>
+								</div> 
+								
+								<canvas	id = "meter1" width = "240px" height = "160px"></canvas>
+								<script>
+									function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter1',
+									min: 0,
+									max: 7,
+									value: meterChartData_marketexpansion_region_Hosp_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, 'Gradient(rgba(255,0,0,0.1):rgba(255,0,0,0.5))'],
+											[2.33,4.66, 'Gradient(rgba(255,255,0,0.1):rgba(255,255,0,0.4))'],
+											[4.66,7, 'Gradient(rgba(0,255,0,0.1):rgba(0,255,0,0.4))']
+										],
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										centerpinFill: '#81778E',
+										tickmarksSmallNum: 0,
+										needleLinewidth: 2,
+										border: false,
+										textSize: 9
+										
+									}
+								}).grow({frames: 60}, myCallback);
+								
+								</script>
+								
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-10 col-sm-8 mb no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5>HOSPITAL SCORE</h5>
+								</div> 
+								<canvas	id = "meter2" width = "240px" height = "160px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter2',
+									min: 0,
+									max: 7,
+									value: meterChartData_marketexpansion_region_Avg_Asp_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, 'Gradient(rgba(255,0,0,0.1):rgba(255,0,0,0.5))'],
+											[2.33,4.66, 'Gradient(rgba(255,255,0,0.1):rgba(255,255,0,0.4))'],
+											[4.66,7, 'Gradient(rgba(0,255,0,0.1):rgba(0,255,0,0.4))']
+										],
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										centerpinFill: '#81778E',
+										tickmarksSmallNum: 0,
+										needleLinewidth: 2,
+										border: false,
+										textSize: 9
+										
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-10 col-sm-8 mb no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5>HOSPITAL SCORE</h5>
+								</div> 
+								<canvas	id = "meter3" width = "240px" height = "160px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter3',
+									min: 0,
+									max: 7,
+									value: meterChartData_marketexpansion_region_Avg_Chal_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, 'Gradient(rgba(255,0,0,0.1):rgba(255,0,0,0.5))'],
+											[2.33,4.66, 'Gradient(rgba(255,255,0,0.1):rgba(255,255,0,0.4))'],
+											[4.66,7, 'Gradient(rgba(0,255,0,0.1):rgba(0,255,0,0.4))']
+										],
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										centerpinFill: '#81778E',
+										tickmarksSmallNum: 0,
+										needleLinewidth: 2,
+										border: false,
+										textSize: 9
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>
+							</div>
+                        </div>
+						<div class="col-lg-3 col-md-10 col-sm-8 mb no-padding small-padding">
+							<!-- REVENUE PANEL -->
+							<div class="white-panel pn">
+								<div class = "white-header">
+									<h5>HOSPITAL SCORE</h5>
+								</div> 
+								<canvas	id = "meter4" width = "240px" height = "160px"></canvas>
+								<script>
+								function myCallback (obj)
+									{
+										// ...
+									}
+									var meter = new RGraph.Meter({
+									id: 'meter4',
+									min: 0,
+									max: 7,
+									value: meterChartData_marketexpansion_region_Avg_Lead_Score,
+									options: {
+										colorsRanges: [
+											[0,2.33, 'Gradient(rgba(255,0,0,0.1):rgba(255,0,0,0.5))'],
+											[2.33,4.66, 'Gradient(rgba(255,255,0,0.1):rgba(255,255,0,0.4))'],
+											[4.66,7, 'Gradient(rgba(0,255,0,0.1):rgba(0,255,0,0.4))']
+										],
+										textColor: '#606060',
+										valueText : true,
+										valueTextDecimals: 2,
+										borderColor : '#CCCCCC',										
+										needleColor: '#81778E',
+										centerpinStroke: '#81778E',
+										centerpinFill: '#81778E',
+										tickmarksSmallNum: 0,
+										needleLinewidth: 2,
+										border: false,
+										textSize: 12
+									}
+								}).grow({frames: 60}, myCallback);
+								</script>								
+							</div>
+                        </div>
+					</div>
+                 </section>
+            </section>
+            <!--main content end-->
+            <!-- **********************************************************************************************************************************************************
+            RIGHT SIDEBAR CONTENT ***********************************************************************************************************************************************************
+            -->
+            <aside>
+                <div id="sidebar1" class="nav-collapse">
+                    <!-- sidebar menu start-->
+                    <!--COMPLETED ACTIONS DONUTS CHART-->
+                    <h3>ALERTS</h3>
+                    <!-- First Action -->
+                    <div class="desc">
+                        <div class="thumb">
+                            <span class="badge bg-theme">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                        </div>
+                        <div class="details">
+                            <p>
+                                <muted>2 Minutes Ago</muted>
+                                <br>
+                                <a href="#">James Brown</a>subscribed to your newsletter.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Second Action -->
+                    <div class="desc">
+                        <div class="thumb">
+                            <span class="badge bg-theme">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                        </div>
+                        <div class="details">
+                            <p>
+                                <muted>3 Hours Ago</muted>
+                                <br>
+                                <a href="#">Diana Kennedy</a>purchased a year subscription.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Third Action -->
+                    <div class="desc">
+                        <div class="thumb">
+                            <span class="badge bg-theme">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                        </div>
+                        <div class="details">
+                            <p>
+                                <muted>7 Hours Ago</muted>
+                                <br>
+                                <a href="#">Brandon Page</a>purchased a year subscription.
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <script>
+						 // Create a new Firebase reference, and a new instance of the Login client
+						  var Ref = new Firebase('https://intense-fire-8127.firebaseio.com/');
+						  var chatRef = new Firebase('https://intense-fire-8127.firebaseio.com/chat');
+						  var chatRefUsers = new Firebase('https://intense-fire-8127.firebaseio.com/chat/users');
+						  var chatRefMsgs = new Firebase('https://intense-fire-8127.firebaseio.com/chat/messages');
+						  
+						  function login(provider) {
+							Ref.authWithOAuthPopup(provider, function(error, authData) {
+							  if (error) {
+								console.log(error);
+							  }else{
+							  console.log("Success!");
+							  alert("authData.uid = "+authData.uid);
+							  alert("authData.provider = "+authData.provider);
+							  alert(Ref);
+							  Ref.set(authData.uid);
+							  }
+							});
+						  }
+						  
+						  // Once authenticated, instantiate Firechat with our user id and user name
+						 /* chatRef.onAuth(function(authData) {							
+							if (authData) {
+							  var chat = new FirechatUI(chatRef, document.getElementById('firechat-wrapper'));
+							  alert("authData.uid = "+authData.uid);
+							  alert("authData.provider = "+authData.provider);
+							  
+							  //chat.setUser(authData.uid, authData[authData.provider].displayName);
+							  //var user = chatRef.getAuth();
+							  //var usersRef = chatRef.child('users').child(user.uid);
+							  //alert(user);
+							  alert(chatRefUsers);
+							  
+							  chatRefUsers.child('user1').set(authData.uid);
+							}
+						  });*/
+						  
+						 /* function login(provider) {
+							chatRefMsgs.authWithOAuthPopup(provider, function(error, authData) {
+							  if (error) {
+								console.log(error);
+							  }else{
+							  console.log("Success!");
+							  }
+							});
+						  }*/
+					</script>
+					
+						<div id='firechat-wrapper'>
+						  <a href='#' onclick='login("google");'>Login</a>
+						</div>
+
+					
+                    <!-- CALENDAR-->
+                    <div id="calendar" class="mb">
+                        <div class="panel green-panel no-margin">
+                            <div class="panel-body no-padding no-margin">
+                                <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; 
+
+margin-left: 33%; margin-top: -50px; width: 175px;">
+                                    <div class="arrow"></div>
+                                    <h3 class="popover-title" style="disadding: none;"></h3>
+                                    <div id="date-popover-content" class="popover-content"></div>
+                                </div>
+                                <div id="my-calendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- / calendar -->
+                    <!-- sidebar menu end-->
+                </div>
+            </aside>
+            <br style="clear: left;">
+            <!--footer start-->
+            <footer class="site-footer">
+                <div class="text-center">© Heure Health 1993 -
+                    <script language="javascript" type="text/javascript">
+                        var today = new Date()
+                        					var year = today.getFullYear()
+                        					document.write(year)
+                    </script>
+                    <a href="index.html#" class="go-top">
+
+                  <i class="fa fa-angle-up"></i>
+
+              </a>
+                </div>
+            </footer>
+            <!--footer end-->
+        </section>
+        <!-- js placed at the end of the document so the pages load faster -->
+        <!--<script src="assets/js/jquery.js"></script>
+        <script src="assets/js/jquery-1.11.3.min.js"></script> -->
+        <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+        <script src="assets/js/jquery.sparkline.js"></script>
+        <!--common script for all pages-->
+        <script src="assets/js/common-scripts.js"></script>
+        <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
+        <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
+        <!--script for this page-->
+        <script src="assets/js/sparkline-chart.js"></script>
+        <script src="assets/js/zabuto_calendar.js"></script>
+        <!--<script src="assets/js/chartjs-conf.js"></script>-->
+        <!-- <script type="text/javascript">
+
+        $(document).ready(function () {
+
+        var unique_id = $.gritter.add({
+
+            // (string | mandatory) the heading of the notification
+
+            title: 'Welcome to Dashgum!',
+
+            // (string | mandatory) the text inside the notification
+
+            text: 'Hover me to enable the Close Button. You can hide the left sidebar clicking on the button next to the logo. Free version for <a href="http://blacktie.co" target="_blank" style="color:#ffd777">BlackTie.co</a>.',
+
+            // (string | optional) the image to display on the left
+
+            image: 'assets/img/ui-sam.jpg',
+
+            // (bool | optional) if you want it to fade out on its own or just sit there
+
+            sticky: true,
+
+            // (int | optional) the time you want it to be alive for before fading out
+
+            time: '',
+
+            // (string | optional) the class name you want to apply to that specific message
+
+            class_name: 'my-sticky-class'
+
+        });
+
+
+
+        return false;
+
+        });
+
+	</script> 
+
+	-->
+        <script type="application/javascript">
+            $(document).ready(function () {
+                $("#date-popover").popover({html: true, trigger: "manual"});
+                $("#date-popover").hide();
+                $("#date-popover").click(function (e) {
+                    $(this).hide();
+                });
+            
+                $("#my-calendar").zabuto_calendar({
+                    action: function () {
+                        return myDateFunction(this.id, false);
+                    },
+                    action_nav: function () {
+                        return myNavFunction(this.id);
+                    },
+                    ajax: {
+                        url: "show_data.php?action=1",
+                        modal: true
+                    },
+                    legend: [
+                        {type: "text", label: "Special event", badge: "00"},
+                        {type: "block", label: "Regular event", }
+                    ]
+                });
+            });
+            
+            
+            function myNavFunction(id) {
+                $("#date-popover").hide();
+                var nav = $("#" + id).data("navigation");
+                var to = $("#" + id).data("to");
+                console.log('nav ' + nav + ' to: ' + to.month + '/' + to.year);
+            }
+        </script>
+        
+        
+       <!-- <script src="assets/js/jquery-fullscreen-plugin-master/demo/fullscreen.js"></script> -->
+        
+    </body>
+
+</html>

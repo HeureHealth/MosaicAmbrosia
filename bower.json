@@ -1,0 +1,28 @@
+{
+  "name": "MosaicAmbrosia",
+  "version": "1.0.0",
+  "description": "Mosaic Ambosia",
+  "main": "C:/Userdata/Berni/Bootstrap/MosaicAmbrosia/pages/RaghuSantanam_region.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Mosaic",
+    "Ambrosia"
+  ],
+  "authors": [
+    "Rufus Moses",
+    "Garnet Moses",
+    "Raj Victor",
+    "Bernice Ebenezer"
+  ],
+  "license": "MIT",
+  "homepage": "C:/Userdata/Berni/Bootstrap/MosaicAmbrosia/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
